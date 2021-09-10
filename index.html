@@ -6,33 +6,23 @@
 </head>
 <body>
   
-  <div class="words word-1">
-    <span>C</span>
-    <span>H</span>
-    <span>R</span>
-    <span>I</span>
-    <span>S</span>
-    <span>T</span>
-    <span>O</span>
-    <span>P</span>
-    <span>H</span>
+  <a class="btn-shine" target="_blank">Christoph ist ein Sack</a>
+
+  <div class="video-container">
+    <video class="video" id="video_background" preload="true" width="320" loop height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
   </div>
 
-  <div class="words word-2">
-    <span>I</span>
-    <span>S</span>
-    <span>T</span>
-  </div>
+  <script>
+    var video = document.getElementById("video_background");
+    var delayInMilliseconds = 5000; //1 second
 
-  <div class="words word-3">
-    <span>E</span>
-    <span>I</span>
-    <span>N</span>
-    <span> </span>
-    <span>S</span>
-    <span>A</span>
-    <span>C</span>
-    <span>K</span>
-  </div>
+setTimeout(function() {
+  video.play();
+}, delayInMilliseconds);
+
+  </script>
   
 </body>

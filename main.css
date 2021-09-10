@@ -1,58 +1,79 @@
 body {
-  font-family: "Archivo Black", sans-serif;
-  background: #f4d03f;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  background: black;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.words {
-  color: #000000;
-  font-size: 0;
-  line-height: 1.5;
+.btn-shine {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 50px;
+  text-decoration: none;
+  white-space: nowrap;
 }
-
-.words span {
-  font-size: 5rem;
-  display: inline-block;
-  animation: move 3s ease-in-out infinite;
-}
-
-@keyframes move {
+@-moz-keyframes shine {
   0% {
-    transform: translate(-30%, 0);
+    background-position: 0;
   }
-  50% {
-    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  60% {
+    background-position: 280px;
   }
   100% {
-    transform: translate(30%, 0);
+    background-position: 500px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 500px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 500px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 500px;
   }
 }
 
-.words span:nth-child(2) {
-  animation-delay: 0.5s;
+
+.video {
+  margin: 300px 50%;
+  width: fit-content;
 }
 
-.words span:nth-child(3) {
-  animation-delay: 1s;
+.video-container {
+  width: 100%;
 }
-
-.words span:nth-child(4) {
-  animation-delay: 1.5s;
-}
-
-.words span:nth-child(5) {
-  animation-delay: 2s;
-}
-
-.words span:nth-child(6) {
-  animation-delay: 2.5s;
-}
-
-.words span:nth-child(7) {
-  animation-delay: 3s;
-}
-
