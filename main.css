@@ -5,10 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .btn-shine {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   padding: 12px 48px;
   color: #fff;
   background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
@@ -70,10 +67,12 @@ body {
 
 
 .video {
-padding-top: 200px;
+margin: 0 auto;
 }
 
-.video-container {
+.container {
   display: flex;
   flex-direction: column;
+
+  margin: 0 auto;
 }
