@@ -70,11 +70,10 @@ body {
 
 
 .video {
-  margin: 300px 50%;
   width: fit-content;
 }
 
 .video-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
